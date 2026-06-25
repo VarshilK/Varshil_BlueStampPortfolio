@@ -175,7 +175,7 @@ Don't forget to place the link of where to buy each component inside the quotati
 |:--:|:--:|:--:|:--:|
 | Arduino Uno R3 | Acts as the brain of the project, where I upload the code. Controls all the actions and movements of parts | $20.70 | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 | 3 Servo Motors | Spins the string, allows the spacecraft to move | $22.50 | <a href="https://www.elexp.com/products/29fs90rservo-continuous-rot?srsltid=AfmBOoodm4al84LFHUeoMycXLMbNuU7vi1NdhtlO_TPh-rBaxuLcOGDx"> Link </a> |
-| Breadboard | Use to hold the wires in place without the need of soldering, allowing the electrical circuits to flow | $5.95 | <a href="[https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/](https://lighthouseleds.com/full-size-solderless-breadboard-830.html?gad_source=4&gad_campaignid=17178518397&gbraid=0AAAAAChfWI3NjhuZVq8eWMCtTvGdKkh43&gclid=Cj0KCQjwo_PRBhDNARIsAEcVALX8ge15hzgJf0yn9wduaXPoXm3wAcBml5cnGxUWID2pONDeZ1opB8UaAoBJEALw_wcB)"> Link </a> |
+| Breadboard | Use to hold the wires in place without the need of soldering, allowing the electrical circuits to flow | $5.95 | <a href="https://lighthouseleds.com/full-size-solderless-breadboard-830.html?gad_source=4&gad_campaignid=17178518397&gbraid=0AAAAAChfWI3NjhuZVq8eWMCtTvGdKkh43&gclid=Cj0KCQjwo_PRBhDNARIsAEcVALX8ge15hzgJf0yn9wduaXPoXm3wAcBml5cnGxUWID2pONDeZ1opB8UaAoBJEALw_wcB"> Link </a> |
 
 <!--# Other Resources/Examples
 One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
