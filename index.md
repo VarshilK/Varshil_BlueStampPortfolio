@@ -13,7 +13,7 @@ You should comment out all portions of your portfolio that you have not complete
 
 **Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
 
-![[Varshil K.heic](Varshil K.heic)]
+![[]()]
   
 <!--# Final Milestone
 
@@ -53,6 +53,17 @@ For your first milestone, describe what your project is and how you plan to buil
 - Challenges you're facing and solving in your future milestones
 - What your plan is to complete your project-->
 
+# Starter Project
+
+**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+For your first milestone, describe what your project is and how you plan to build it. You can include:
+- An explanation about the different components of your project and how they will all integrate together
+- Technical progress you've made so far
+- Challenges you're facing and solving in your future milestones
+- What your plan is to complete your project-->
 # Schematics 
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
 
@@ -163,7 +174,7 @@ Don't forget to place the link of where to buy each component inside the quotati
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
 | Arduino Uno R3 | Acts as the brain of the project, where I upload the code. Controls all the actions and movements of parts | $20.70 | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
-| 3*Servo Motors | Spins the string, allows the spacecraft to move | $22.50 | <a href="https://www.elexp.com/products/29fs90rservo-continuous-rot?srsltid=AfmBOoodm4al84LFHUeoMycXLMbNuU7vi1NdhtlO_TPh-rBaxuLcOGDx"> Link </a> |
+| 3 Servo Motors | Spins the string, allows the spacecraft to move | $22.50 | <a href="https://www.elexp.com/products/29fs90rservo-continuous-rot?srsltid=AfmBOoodm4al84LFHUeoMycXLMbNuU7vi1NdhtlO_TPh-rBaxuLcOGDx"> Link </a> |
 | Breadboard | Use to hold the wires in place without the need of soldering, allowing the electrical circuits to flow | $5.95 | <a href="[https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/](https://lighthouseleds.com/full-size-solderless-breadboard-830.html?gad_source=4&gad_campaignid=17178518397&gbraid=0AAAAAChfWI3NjhuZVq8eWMCtTvGdKkh43&gclid=Cj0KCQjwo_PRBhDNARIsAEcVALX8ge15hzgJf0yn9wduaXPoXm3wAcBml5cnGxUWID2pONDeZ1opB8UaAoBJEALw_wcB)"> Link </a> |
 
 <!--# Other Resources/Examples
