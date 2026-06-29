@@ -11,7 +11,7 @@ My project presents a way to control the motion of a spacecraft using servo moto
 | Varshil K | Emerald High School | Mechanical Engineering | Incoming Sophomore
 
 
-!(Varshil K.heic)
+![Varshil]('/Users/varshilkaipu/Desktop/Varshil Headshot.png')
   
 <!--# Final Milestone
 
