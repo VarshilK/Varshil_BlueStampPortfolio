@@ -37,19 +37,17 @@ For your second milestone, explain what you've worked on since your previous mil
 - Technical details of what you've accomplished and how they contribute to the final goal
 - What has been surprising about the project so far
 - Previous challenges you faced that you overcame
-- What needs to be completed before your final milestone 
+- What needs to be completed before your final milestone -->
 
 # First Milestone
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MNj89RGkUpo?si=f9XJmlA5Ue6vDcmE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-For your first milestone, describe what your project is and how you plan to build it. You can include:
-- An explanation about the different components of your project and how they will all integrate together
-- Technical progress you've made so far
-- Challenges you're facing and solving in your future milestones
-- What your plan is to complete your project-->
+My Project is the SpaceCraft Motion Simulator, and this is my plan to complete my project:
+- The components of my project so far include a full PCV Pipe Frame, 6 servo motors, 6 buttons, jumper wires and a large breadboard
+- The progress I've made in my project so far includes getting all 3 servo motors to move freely back and forth using the 6 buttons attatched on the breadboard
+- Some challenges I'm facing so far is problems with the servos moving too slow, or not moving smoothly. I plan to fix this by posssibly increasing the power input of the servos to increase their speed and improve the project.
+- To complete my project, I hope to attatch all the CAD parts including the servo mount, servo dowel and rocket to it, and use the string to move the rocket around the frame.
 
 # Starter Project
 
@@ -57,8 +55,7 @@ For your first milestone, describe what your project is and how you plan to buil
 
 My starter project is a RetroArcade Game Console that uses soldering to hold the parts in place and complete the circuit. 
    - Some challenges I faced when building this project where that the solder would often touch between 2 different parts, which causes a short circuit, which can damage the batteries and parts in the project.
-     
-   - I enjoyed learning how to ...
+   - I enjoyed learning how to solder, and gained knowledge on electric components and how to transfer the current between the board and other components of the project
   
 # Schematics 
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
