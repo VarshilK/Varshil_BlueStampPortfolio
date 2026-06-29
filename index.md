@@ -61,6 +61,7 @@ My starter project is a RetroArcade Game Console that uses soldering to hold the
 
 First Milestone Wiring:
 
+
 <img width="705" height="658" alt="Wiring Diagram" src="https://github.com/user-attachments/assets/daee934d-0a04-43b9-a05c-613d282a8185" />
 
 # Code
