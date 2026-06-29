@@ -1,3 +1,4 @@
+<img width="480" height="641" alt="Varshil Headshot" src="https://github.com/user-attachments/assets/c25ed428-e130-4c80-8bd8-811416cc495d" />
 # SpaceCraft Motion Simulator
 My project presents a way to control the motion of a spacecraft using servo motors. Currently, spacecrafts get thrown into the ocean after their use. By using the solution presented in this project, it is possible to actually land the spacecrafts on the ground to save time and money that is lost when retrieving a spacecraft from sea.
 
@@ -11,7 +12,7 @@ My project presents a way to control the motion of a spacecraft using servo moto
 | Varshil K | Emerald High School | Mechanical Engineering | Incoming Sophomore
 
 
-![Varshil]('/Users/varshilkaipu/Desktop/Varshil Headshot.png')
+<img width="480" height="641" alt="Varshil Headshot" src="https://github.com/user-attachments/assets/c25ed428-e130-4c80-8bd8-811416cc495d" />
   
 <!--# Final Milestone
 
@@ -60,7 +61,7 @@ My starter project is a RetroArcade Game Console that uses soldering to hold the
 # Schematics
 
 First Milestone Wiring:
-![Circuit Diagram]('/Users/varshilkaipu/Desktop/Wiring Diagram.png')
+<img width="705" height="658" alt="Wiring Diagram" src="https://github.com/user-attachments/assets/daee934d-0a04-43b9-a05c-613d282a8185" />
 
 # Code
 
