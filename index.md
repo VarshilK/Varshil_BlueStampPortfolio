@@ -49,8 +49,6 @@ My Project is the SpaceCraft Motion Simulator, and this is my plan to complete m
 - Some challenges I'm facing so far is problems with the servos moving too slow, or not moving smoothly. I plan to fix this by posssibly increasing the power input of the servos to increase their speed and improve the project.
 - To complete my project, I hope to attatch all the CAD parts including the servo mount, servo dowel and rocket to it, and use the string to move the rocket around the frame.
 
-![Wiring Diagram.png]
-
 # Starter Project
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/GjduWvpThFo?si=GGB-SvRKq7--q_Zt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -59,8 +57,10 @@ My starter project is a RetroArcade Game Console that uses soldering to hold the
    - Some challenges I faced when building this project where that the solder would often touch between 2 different parts, which causes a short circuit, which can damage the batteries and parts in the project.
    - I enjoyed learning how to solder, and gained knowledge on electric components and how to transfer the current between the board and other components of the project
   
-# Schematics 
-Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
+# Schematics
+
+First Milestone Wiring:
+![Wiring Diagram.png]
 
 # Code
 
