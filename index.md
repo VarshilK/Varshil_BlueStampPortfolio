@@ -49,7 +49,7 @@ My Project is the SpaceCraft Motion Simulator, and this is my plan to complete m
 - Some challenges I'm facing so far is problems with the servos moving too slow, or not moving smoothly. I plan to fix this by posssibly increasing the power input of the servos to increase their speed and improve the project.
 - To complete my project, I hope to attatch all the CAD parts including the servo mount, servo dowel and rocket to it, and use the string to move the rocket around the frame.
 
-![
+![Wiring Diagram.png]
 
 # Starter Project
 
