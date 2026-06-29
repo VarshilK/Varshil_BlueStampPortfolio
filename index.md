@@ -1,4 +1,3 @@
-<img width="480" height="641" alt="Varshil Headshot" src="https://github.com/user-attachments/assets/c25ed428-e130-4c80-8bd8-811416cc495d" />
 # SpaceCraft Motion Simulator
 My project presents a way to control the motion of a spacecraft using servo motors. Currently, spacecrafts get thrown into the ocean after their use. By using the solution presented in this project, it is possible to actually land the spacecrafts on the ground to save time and money that is lost when retrieving a spacecraft from sea.
 
