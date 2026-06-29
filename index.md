@@ -60,7 +60,7 @@ My starter project is a RetroArcade Game Console that uses soldering to hold the
 # Schematics
 
 First Milestone Wiring:
-!(Wiring Diagram.png)
+![Circuit Diagram]('/Users/varshilkaipu/Desktop/Wiring Diagram.png')
 
 # Code
 
