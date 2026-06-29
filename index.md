@@ -11,7 +11,7 @@ My project presents a way to control the motion of a spacecraft using servo moto
 | Varshil K | Emerald High School | Mechanical Engineering | Incoming Sophomore
 
 
-![Varshil K.heic]
+!(Varshil K.heic)
   
 <!--# Final Milestone
 
@@ -60,7 +60,7 @@ My starter project is a RetroArcade Game Console that uses soldering to hold the
 # Schematics
 
 First Milestone Wiring:
-![Wiring Diagram.png]
+!(Wiring Diagram.png)
 
 # Code
 
