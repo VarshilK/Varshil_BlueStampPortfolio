@@ -8,7 +8,7 @@ My project presents a way to control the motion of a spacecraft using servo moto
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
-| Varshil K | Emerald High School | Mechanical Engineering | Incoming Sophomore
+| Varshil K | Emerald High School | Robotics Engineering | Incoming Sophomore
 
 
 <img width="480" height="641" alt="Varshil Headshot" src="https://github.com/user-attachments/assets/c25ed428-e130-4c80-8bd8-811416cc495d" />
