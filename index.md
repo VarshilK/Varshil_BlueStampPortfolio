@@ -12,6 +12,11 @@ My project presents a way to control the motion of a spacecraft using servo moto
 
 
 <img width="480" height="641" alt="Varshil Headshot" src="https://github.com/user-attachments/assets/c25ed428-e130-4c80-8bd8-811416cc495d" />
+</>
+<img width="255" height="205" alt="Screenshot 2026-07-30 at 9 54 52 PM" src="https://github.com/user-attachments/assets/1786019e-ef59-46ae-9a8e-be003fa994ed" />
+<img width="557" height="481" alt="Screenshot 2026-07-30 at 9 55 14 PM" src="https://github.com/user-attachments/assets/a6daf99e-7f04-45d5-a496-41d393fcfbb2" />
+
+
   
 <!--# Final Milestone
 
