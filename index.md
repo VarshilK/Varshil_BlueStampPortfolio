@@ -18,17 +18,17 @@ My project presents a way to control the motion of a spacecraft using servo moto
 
 
   
-<!--# Final Milestone
+# Final Milestone
 
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-For your final milestone, explain the outcome of your project. Key details to include are:
-- What you've accomplished since your previous milestone
-- What your biggest challenges and triumphs were at BSE
-- A summary of key topics you learned about
-- What you hope to learn in the future after everything you've learned at BSE -->
+For my final milestone, I completed all of my modifications, and created a neat final project:
+- I added a fourth servo motor to control the pitch of the space shuttle to ensure every single movement was fully controlled. I added a bluetooth connection between HC-05 modules between a video game controller that I cadded and printed and my project frame. I cadded four frame base parts that could connect with each other and hold the major electrical components of my frame including an arduino uno r3, HC-05, battery, and breadboard.
+- The biggest challenge I faced with my modifications were with the bluetooth connection, with frequent jittering of my servo motors. I solved this issue with creative code techniques, such as only sending the joystick values from the arduino nano and arduino when there was a notable change in the joystick position. As I continued these creative code techniques, I narrowed down the issues, and made sure there was no jittering at all in the end.
+- With these modifications, I refined my CAD skills, learned advanced breadboard electronics, the use of microcontrollers, transferring information between microcontrollers, and many more that I will carry on with me in the future.
+- In the future, I hope to add an IMU (Inertial Movement Unit) to my project, which will allow me to track the location, orientation, needed thrust, needed fuel, and many more details of the spacecraft to use in a real spacecraft launch.
 
 
 
