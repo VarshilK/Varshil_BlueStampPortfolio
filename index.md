@@ -1,5 +1,5 @@
-# SpaceCraft Motion Simulator
-My project presents a way to control the motion of a spacecraft using servo motors. Currently, spacecrafts get thrown into the ocean after their use. By using the solution presented in this project, it is possible to actually land the spacecrafts on the ground to save time and money that is lost when retrieving a spacecraft from sea.
+# Altitude Control Test Rig
+My project presents a way to control the motion of a spacecraft using servo motors and joysticks. Modern day spacecrafts use on and off thrusters for their motion, making tiny adjustments extremely difficult. Engineers are currently attempting to solve this issue, which is why I build this project to look into it myself.
 
 <!--You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions:
 ```HTML 
