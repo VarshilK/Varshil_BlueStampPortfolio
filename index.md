@@ -1,5 +1,5 @@
 # Altitude Control Test Rig
-My project presents a way to control the motion of a spacecraft using servo motors and joysticks. Modern day spacecrafts use on and off thrusters for their motion, making tiny adjustments extremely difficult. Engineers are currently attempting to solve this issue, which is why I build this project to look into it myself.
+My project models how a spacecraft can change its position and orientation in space using continuous and smooth motion inputs. Modern day spacecrafts use on and off thrusters for their motion, making tiny adjustments extremely difficult. Engineers are currently attempting to solve this issue, which is why I build this project to look into it myself.
 
 <!--You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions:
 ```HTML 
@@ -178,10 +178,10 @@ void loop(){
 | 6 Breadboard Buttons | Connect to the breadboard and are used to move the servos back and forth | $2.93 | <a href="https://www.digikey.com/en/products/detail/sparkfun-electronics/14460/7915747?gclsrc=aw.ds&gad_source=1&gad_campaignid=20243136172&gbraid=0AAAAADrbLlj1fOpVS-J9OCclJDTSNeTLj&gclid=CjwKCAjwuanRBhBSEiwAY5y6V8mlnmJvqqdaVgelS-AyD3Dh3BkGUHFYLTWQ_g0l-Bhclth4FxT3rhoCd3kQAvD_BwE"> Link </a> |
 | String | Connected to the servo motors and move the space shuttle around the frame | $4.59 | <a href="https://www.amazon.com/Cotton-Bakers-String-Wrapping-Packaging/dp/B07KW42VDC/ref=sr_1_2_sspa?dib=eyJ2IjoiMSJ9.CdgXAo0yEAB0jCxAr3DoObF_G1NJdNgW8gsejlAzd72nPp9eTa4PDHorXZmGG7WrbT8Qw3wbNUEIW9WoBV9bRAYzpvU0lKfmsskeWX4cDKF7nbj8FPfmFGo00C8CtCHQLF5lT6WUlcY0UlhqLY-vJv4ODwAwfCBq6furAjFhbpohm4fv06kQnQ0pDCScdAZmCf94Al7YmAsbyBpgfm_I5vDC5GW-KDS5Z26JENLZzVXDTraJYhMDeh_JdaRquM8-dgtdJueTNvpdg0CDpgHjiUrsaH7yqzi6AljlMLVLR8w.KRLVnKHTfFNi7KKpJabTNHn6JwO_x2OPAQXLu3QnwXw&dib_tag=se&keywords=string&qid=1781195080&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1"> Link </a> |
 
-<!--# Other Resources/Examples
+# Other Resources
 One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
 - [Example 1](https://trashytuber.github.io/YimingJiaBlueStamp/)
 - [Example 2](https://sviatil0.github.io/Sviatoslav_BSE/)
 - [Example 3](https://arneshkumar.github.io/arneshbluestamp/)
 
-To watch the BSE tutorial on how to create a portfolio, click here.-->
+To watch the BSE tutorial on how to create a portfolio, click here.
