@@ -16,7 +16,7 @@ My project models how a spacecraft can change its position and orientation in sp
 <img width="255" height="205" alt="Screenshot 2026-07-30 at 9 54 52 PM" src="https://github.com/user-attachments/assets/1786019e-ef59-46ae-9a8e-be003fa994ed" />
 <img width="557" height="481" alt="Screenshot 2026-07-30 at 9 55 14 PM" src="https://github.com/user-attachments/assets/a6daf99e-7f04-45d5-a496-41d393fcfbb2" />
 
-
+[Engineering Notebook](https://docs.google.com/document/d/1oWXSvoXGoQkvAWGFtr6Bl1fPgd_zKZdIL_4tmibW1yw/edit?tab=t.0)
   
 # Final Milestone
 
@@ -310,9 +310,9 @@ void loop() {
 | String | Connected to the servo motors and move the space shuttle around the frame | $4.59 | <a href="https://www.amazon.com/Cotton-Bakers-String-Wrapping-Packaging/dp/B07KW42VDC/ref=sr_1_2_sspa?dib=eyJ2IjoiMSJ9.CdgXAo0yEAB0jCxAr3DoObF_G1NJdNgW8gsejlAzd72nPp9eTa4PDHorXZmGG7WrbT8Qw3wbNUEIW9WoBV9bRAYzpvU0lKfmsskeWX4cDKF7nbj8FPfmFGo00C8CtCHQLF5lT6WUlcY0UlhqLY-vJv4ODwAwfCBq6furAjFhbpohm4fv06kQnQ0pDCScdAZmCf94Al7YmAsbyBpgfm_I5vDC5GW-KDS5Z26JENLZzVXDTraJYhMDeh_JdaRquM8-dgtdJueTNvpdg0CDpgHjiUrsaH7yqzi6AljlMLVLR8w.KRLVnKHTfFNi7KKpJabTNHn6JwO_x2OPAQXLu3QnwXw&dib_tag=se&keywords=string&qid=1781195080&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1"> Link </a> |
 
 # Other Resources
-One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
-- [Example 1](https://trashytuber.github.io/YimingJiaBlueStamp/)
-- [Example 2](https://sviatil0.github.io/Sviatoslav_BSE/)
-- [Example 3](https://arneshkumar.github.io/arneshbluestamp/)
+Additional Material I used to make the Altitude Control Test Rig:
+- [SpaceX Falcon 9]([https://roboticsfaq.com/blog/calculate-servo-torque-robot-arm.html?](https://www.spacex.com/vehicles/falcon-9))
+- [NASA Thruster Position](https://ntrs.nasa.gov/api/citations/20040082156/downloads/20040082156.pdf)
+- [Altitude Simulation Testing](https://abbess.com/vacuum-solutions/altitude-testing-systems/?utm_source=adwords&utm_medium=ppc&utm_term=aerospace%20testing&utm_campaign=Altitude+(Vacuum)+Simulation&hsa_cam=22288753381&hsa_mt=b&hsa_ver=3&hsa_src=g&hsa_ad=734845829480&hsa_net=adwords&hsa_tgt=kwd-403593727626&hsa_acc=9815905210&hsa_grp=174270128303&hsa_kw=aerospace%20testing&gad_source=1&gad_campaignid=22288753381&gbraid=0AAAAAD_kYcmwZkk9DvrxOrqf3xRYI1V1e&gclid=Cj0KCQjw-MDTBhCgARIsAKAkdlQyBoZTgo55KsQ1sRmyoiyPTod0C4NKjQ5TV8rCuFGopfnvRHwu4csaAtvXEALw_wcB)
 
-To watch the BSE tutorial on how to create a portfolio, click here.
+These articles have assisted me in building my project including the math, physics, thruster position, SpaceX rocket motion and how altitude simulation systems work.
