@@ -65,104 +65,235 @@ First Milestone Circuit Diagram:
 
 <img width="705" height="658" alt="Wiring Diagram" src="https://github.com/user-attachments/assets/daee934d-0a04-43b9-a05c-613d282a8185" />
 
-# Code
+# Arduino Uno Code
 
 ```c++
-#include <Servo.h>;
+#include <SoftwareSerial.h>
+#include <Servo.h>
 
-const int servo1pin = 8;
-const int servo2pin = 9;
-const int servo3pin = 10;
+SoftwareSerial BTSerial(10, 11); // RX, TX
 
-const int button1 = 2;
-const int button2 = 3;
-const int button3 = 4;
-const int button4 = 5;
-const int button5 = 6;
-const int button6 = 7;
+Servo servo1, servo2, servo3, servo4;
+const int servoPins[4] = {7, 8, 2, 4};
 
-int servo1forward; 
-int servo1backward; 
-int servo2forward;  
-int servo2backward; 
-int servo3forward;  
-int servo3backward; 
+String inputBuffer = "";
+bool receiving = false;
 
-const int stopspeed = 90;
-const int forwardspeed = 180;
-const int backwardspeed = 0;
+int lastAngles[4] = {90, 90, 90, 90};
+const int DEADZONE = 15;
+const int CENTER_ZONE = 8;
 
-Servo servo1;
-Servo servo2;
-Servo servo3;
+bool reversed[4] = {
+  true,
+  false,
+  true,
+  false,
+};
 
-void setup(){ 
+const int BUTTON_SPEED_OFFSET = 50;
 
-  servo1.attach(servo1pin);
-  servo2.attach(servo2pin);
-  servo3.attach(servo3pin);
-
-  pinMode(button1,INPUT_PULLUP);
-  pinMode(button2,INPUT_PULLUP);
-  pinMode(button3,INPUT_PULLUP);
-  pinMode(button4,INPUT_PULLUP);
-  pinMode(button5,INPUT_PULLUP);
-  pinMode(button6,INPUT_PULLUP);
-
+void setup() {
   Serial.begin(9600);
+  BTSerial.begin(9600);
+
+  servo1.attach(servoPins[0]);
+  servo2.attach(servoPins[1]);
+  servo3.attach(servoPins[2]);
+  servo4.attach(servoPins[3]);
+
+  servo1.write(lastAngles[0]);
+  servo2.write(lastAngles[1]);
+  servo3.write(lastAngles[2]);
+  servo4.write(lastAngles[3]);
+
+  Serial.println("Uno (Slave) ready - driving servos");
 }
 
-void loop(){ 
-  servo1forward = !digitalRead(button1);
-  servo1backward = !digitalRead(button2);
-  servo2forward = !digitalRead(button3);
-  servo2backward = !digitalRead(button4);
-  servo3forward = !digitalRead(button5);
-  servo3backward = !digitalRead(button6);
-  
-  // motor 1
-  if(servo1forward && !servo1backward){ 
-    servo1.write(forwardspeed);        
-    Serial.print("Motor 1: Forward  | ");
+void loop() {
+  while (BTSerial.available()) {
+    char c = BTSerial.read();
+
+    if (c == '<') {
+      inputBuffer = "";
+      receiving = true;
+    } else if (c == '>') {
+      receiving = false;
+      parseAndSetServos(inputBuffer);
+    } else if (receiving) {
+      inputBuffer += c;
+    }
   }
-  else if(!servo1forward && servo1backward){
-    servo1.write(backwardspeed); 
-    Serial.print("Motor 1: Backward | ");
-  }
-  else{ 
-    servo1.write(stopspeed);  
-    Serial.print("Motor 1: Stopped  | ");
-  }
-  
-  // motor 2
-  if(servo2forward && !servo2backward){
-    servo2.write(forwardspeed); 
-    Serial.print("Motor 2: Forward  | ");
-  }
-  else if(!servo2forward && servo2backward){ 
-    servo2.write(backwardspeed);           
-    Serial.print("Motor 2: Backward | ");
-  }
-  else{ 
-    servo2.write(stopspeed);  
-    Serial.print("Motor 2: Stopped  | ");
-  }
- 
-  if(servo3forward && !servo3backward){
-    servo3.write(forwardspeed);  
-    Serial.println("Motor 3: Forward  | ");
-  }
-  else if(!servo3forward && servo3backward){
-    servo3.write(backwardspeed);   
-    Serial.println("Motor 3: Backward | ");
-  }
-  else{
-    servo3.write(stopspeed);  
-    Serial.println("Motor 3: Stopped  | ");
+}
+
+void spinButton1() {
+  servo1.write(90 + BUTTON_SPEED_OFFSET);
+  servo3.write(90 + BUTTON_SPEED_OFFSET);
+}
+
+void spinButton2() {
+  servo1.write(90 - BUTTON_SPEED_OFFSET);
+  servo3.write(90 - BUTTON_SPEED_OFFSET);
+}
+
+void parseAndSetServos(String data) {
+  int values[6];
+  int idx = 0;
+  int lastComma = -1;
+
+  for (int i = 0; i < (int)data.length() && idx < 6; i++) {
+    if (data[i] == ',' || i == (int)data.length() - 1) {
+      int endIdx = (data[i] == ',') ? i : i + 1;
+      String piece = data.substring(lastComma + 1, endIdx);
+      values[idx] = piece.toInt();
+      idx++;
+      lastComma = i;
+    }
   }
 
+  if (idx != 6) return;
+
+  bool buttonPressed = (values[4] == 1);
+  bool button2Pressed = (values[5] == 1);
+
+  int newAngles[4];
+  newAngles[0] = map(values[0], 0, 1023, 0, 180);
+  newAngles[1] = map(values[1], 0, 1023, 0, 180);
+  newAngles[2] = map(values[2], 0, 1023, 0, 180);
+  newAngles[3] = map(values[3], 0, 1023, 0, 180);
+
+  for (int i = 0; i < 4; i++) {
+    if (reversed[i]) {
+      newAngles[i] = 180 - newAngles[i];
+    }
+  }
+
+  if (buttonPressed) {
+    spinButton1();
+  } else if (button2Pressed) {
+    spinButton2();
+  } else {
+    if (abs(newAngles[0] - 90) <= CENTER_ZONE) {
+      servo1.write(90);
+      lastAngles[0] = 90;
+    } else if (abs(newAngles[0] - lastAngles[0]) >= DEADZONE) {
+      servo1.write(newAngles[0]);
+      lastAngles[0] = newAngles[0];
+    }
+
+    if (abs(newAngles[2] - 90) <= CENTER_ZONE) {
+      servo3.write(90);
+      lastAngles[2] = 90;
+    } else if (abs(newAngles[2] - lastAngles[2]) >= DEADZONE) {
+      servo3.write(newAngles[2]);
+      lastAngles[2] = newAngles[2];
+    }
+  }
+
+  // servo2 and servo4 always joystick-controlled, unaffected by either button
+  if (abs(newAngles[1] - 90) <= CENTER_ZONE) {
+    servo2.write(90);
+    lastAngles[1] = 90;
+  } else if (abs(newAngles[1] - lastAngles[1]) >= DEADZONE) {
+    servo2.write(newAngles[1]);
+    lastAngles[1] = newAngles[1];
+  }
+
+  if (abs(newAngles[3] - 90) <= CENTER_ZONE) {
+    servo4.write(90);
+    lastAngles[3] = 90;
+  } else if (abs(newAngles[3] - lastAngles[3]) >= DEADZONE) {
+    servo4.write(newAngles[3]);
+    lastAngles[3] = newAngles[3];
+  }
 }
 ```
+# Arduino Nano Code
+
+```c++
+#include <SoftwareSerial.h>
+
+SoftwareSerial BTSerial(2, 3); // RX, TX
+
+const int joyPins[4] = {A0, A1, A2, A3};
+const int buttonPin = A4;
+const int buttonPin3 = A5; // physically button3, fills the "button2" slot in the packet
+
+int centerValues[4];
+int lastSentValues[4];
+
+const int MOVE_THRESHOLD = 100;
+
+void setup() {
+  Serial.begin(9600);
+  BTSerial.begin(9600);
+  pinMode(buttonPin, INPUT_PULLUP);
+  pinMode(buttonPin3, INPUT_PULLUP);
+  Serial.println("Nano (Master) calibrating joystick centers...");
+
+  delay(1000);
+
+  for (int i = 0; i < 4; i++) {
+    long sum = 0;
+    for (int j = 0; j < 20; j++) {
+      sum += analogRead(joyPins[i]);
+      delay(5);
+    }
+    centerValues[i] = sum / 20;
+    lastSentValues[i] = 512;
+
+    Serial.print("Joystick ");
+    Serial.print(i);
+    Serial.print(" center: ");
+    Serial.println(centerValues[i]);
+  }
+
+  Serial.println("Calibration done. Reading joysticks...");
+}
+
+void loop() {
+  int values[4];
+  bool anyChanged = false;
+
+  for (int i = 0; i < 4; i++) {
+    long sum = 0;
+    for (int j = 0; j < 5; j++) {
+      sum += analogRead(joyPins[i]);
+      delayMicroseconds(50);
+    }
+    int raw = sum / 5;
+
+    int adjusted = raw - centerValues[i] + 512;
+    if (adjusted < 0) adjusted = 0;
+    if (adjusted > 1023) adjusted = 1023;
+
+    if (abs(adjusted - lastSentValues[i]) >= MOVE_THRESHOLD) {
+      values[i] = adjusted;
+      lastSentValues[i] = adjusted;
+      anyChanged = true;
+    } else {
+      values[i] = lastSentValues[i];
+    }
+  }
+
+  bool buttonPressed = (digitalRead(buttonPin) == LOW);
+  bool button3Pressed = (digitalRead(buttonPin3) == LOW);
+
+  if (anyChanged || buttonPressed || button3Pressed) {
+    BTSerial.print('<');
+    for (int i = 0; i < 4; i++) {
+      BTSerial.print(values[i]);
+      BTSerial.print(',');
+    }
+    BTSerial.print(buttonPressed ? 1 : 0);
+    BTSerial.print(',');
+    BTSerial.print(button3Pressed ? 1 : 0);
+    BTSerial.print('>');
+  }
+
+  delay(200);
+}
+```
+
 
 # Bill of Materials
 
