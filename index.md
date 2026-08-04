@@ -311,7 +311,7 @@ void loop() {
 
 # Other Resources
 Additional Material I used to make the Altitude Control Test Rig:
-- [SpaceX Falcon 9]([https://roboticsfaq.com/blog/calculate-servo-torque-robot-arm.html?](https://www.spacex.com/vehicles/falcon-9))
+- [SpaceX Falcon 9](https://www.spacex.com/vehicles/falcon-9)
 - [NASA Thruster Position](https://ntrs.nasa.gov/api/citations/20040082156/downloads/20040082156.pdf)
 - [Altitude Simulation Testing](https://abbess.com/vacuum-solutions/altitude-testing-systems/?utm_source=adwords&utm_medium=ppc&utm_term=aerospace%20testing&utm_campaign=Altitude+(Vacuum)+Simulation&hsa_cam=22288753381&hsa_mt=b&hsa_ver=3&hsa_src=g&hsa_ad=734845829480&hsa_net=adwords&hsa_tgt=kwd-403593727626&hsa_acc=9815905210&hsa_grp=174270128303&hsa_kw=aerospace%20testing&gad_source=1&gad_campaignid=22288753381&gbraid=0AAAAAD_kYcmwZkk9DvrxOrqf3xRYI1V1e&gclid=Cj0KCQjw-MDTBhCgARIsAKAkdlQyBoZTgo55KsQ1sRmyoiyPTod0C4NKjQ5TV8rCuFGopfnvRHwu4csaAtvXEALw_wcB)
 
