@@ -49,6 +49,12 @@ My Project is the SpaceCraft Motion Simulator, and this is my plan to complete m
 - Some challenges I'm facing so far is problems with the servos moving too slow, or not moving smoothly. I plan to fix this by posssibly increasing the power input of the servos to increase their speed and improve the project.
 - To complete my project, I hope to attatch all the CAD parts including the servo mount, servo dowel and rocket to it, and use the string to move the rocket around the frame.
 
+First Milestone Circuit Diagram:
+
+
+<img width="705" height="658" alt="Wiring Diagram" src="https://github.com/user-attachments/assets/daee934d-0a04-43b9-a05c-613d282a8185" />
+
+
 # Starter Project
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/GjduWvpThFo?si=GGB-SvRKq7--q_Zt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -59,10 +65,18 @@ My starter project is a RetroArcade Game Console that uses soldering to hold the
   
 # Schematics
 
-First Milestone Circuit Diagram:
+Frame Wiring:
 
 
-<img width="705" height="658" alt="Wiring Diagram" src="https://github.com/user-attachments/assets/daee934d-0a04-43b9-a05c-613d282a8185" />
+<img width="602" height="473" alt="Screenshot 2026-08-07 at 12 04 16 AM" src="https://github.com/user-attachments/assets/8f494f49-4ac1-49f0-9a10-58fc26e9b290" />
+
+
+Video Game Controller Wiring:
+
+
+<img width="797" height="471" alt="Screenshot 2026-08-07 at 12 05 04 AM" src="https://github.com/user-attachments/assets/3817322f-9910-48bb-b146-4bd3d33e6d8b" />
+
+
 
 # Arduino Uno Code
 
