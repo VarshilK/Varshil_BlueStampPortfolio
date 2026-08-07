@@ -19,7 +19,7 @@ My project models how a spacecraft can change its position and orientation in sp
   
 # Final Milestone
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HnThoN3pwXo?si=EaeCk5DOcZ9Fgbi5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 For my final milestone, I completed all of my modifications, and created a neat final project:
 - I added a fourth servo motor to control the pitch of the space shuttle to ensure every single movement was fully controlled. I added a bluetooth connection between HC-05 modules between a video game controller that I cadded and printed and my project frame. I cadded four frame base parts that could connect with each other and hold the major electrical components of my frame including an arduino uno r3, HC-05, battery, and breadboard.
