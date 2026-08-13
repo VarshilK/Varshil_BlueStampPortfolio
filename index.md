@@ -13,7 +13,7 @@ My project models how a spacecraft can change its position and orientation in sp
 [Engineering Notebook](https://docs.google.com/document/d/1oWXSvoXGoQkvAWGFtr6Bl1fPgd_zKZdIL_4tmibW1yw/edit?tab=t.0)
 
 <img width="299.53" height="400" alt="Varshil Headshot" src="https://github.com/user-attachments/assets/c25ed428-e130-4c80-8bd8-811416cc495d" />
-<img width="1000" height="1333" alt="altitude control test rig (1)" src="https://github.com/user-attachments/assets/a061a555-1a5c-4cc4-86aa-0080c3ecb322" />
+<img width="299.53" height="400" alt="altitude control test rig (1)" src="https://github.com/user-attachments/assets/a061a555-1a5c-4cc4-86aa-0080c3ecb322" />
 
 
   
