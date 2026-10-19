@@ -1,7 +1,3 @@
----
-layout: default
-title: Home
----
 # Altitude Control Test Rig
 My project models how a spacecraft can change its position and orientation in space using continuous and smooth motion inputs. Modern day spacecrafts use on and off thrusters for their motion, making tiny adjustments extremely difficult. Engineers are currently attempting to solve this issue, which is why I built this project to look into it myself.
 
